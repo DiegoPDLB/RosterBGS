@@ -5,8 +5,12 @@ Este código será un listado de integrantes del equipo representativo de footba
 ## Problemática 
 La problemática por tratar es que, si una persona quiere conocer a un equipo, sea de la escuela que sea es difícil encontrar información especifica sobre su equipo, incluyendo jugadores y coaching staff.
 
+## ACLARACIONES 
+Para el codigo necesitaré una serie de datos que son un poco dificiles de conseuguir, tema por el cual aún no están 
+
 ## Casos de error
 (…)
 
 ## Modo de uso
-(…)
+(...)
+
