@@ -15,7 +15,8 @@ class persona{
         int edad;
     
     public:
-        persona (std::string , std::string , int);
+        virtual void individuo()=0;
+		persona (std::string , std::string , int);
         std::string getNombre () {return nombre;}
         int getEdad (){return edad;}
         std::string getRol (){return rol;}
@@ -28,7 +29,8 @@ class jugador : public persona {
         int rating;
         std::string posicion;
     public:
-        jugador();
+        void individuo(){cout << "jugador"};
+		jugador();
         jugador(std::string , std::string , int , int , int , std::string);
         int getNumero(){return numero;}
         int getRating() {return rating;}
@@ -41,6 +43,7 @@ class coach : public persona {
         std::string posicion;
         int experiencia;
     public:
+    	void individuo(){cout << "Coach"};
         coach(std::string , std::string , int , std::string , std::string , int);
         int getExp() {return experiencia;}
         void mostrarDatos();
@@ -65,5 +68,14 @@ class equipo{
         void buscarRating (int);
         void buscarExp (int);
 };
+
+int main(){
+	Individuo*individuo1 = new jugador();
+	Individuo*individuo2 = new coach();
+	
+	individuo1 -> individuo();
+	individuo2 -> individuo();
+
+}
 
 #endif
