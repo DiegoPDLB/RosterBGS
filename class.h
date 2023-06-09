@@ -5,7 +5,7 @@
 #include <string>
 
 using namespace std;
-const int m = 10;
+const int m = 70;
 
 
 class persona{
@@ -15,12 +15,11 @@ class persona{
         int edad;
     
     public:
-        virtual void individuo()=0;
-		persona (std::string , std::string , int);
+        persona (std::string n , std::string r , int e);
         std::string getNombre () {return nombre;}
         int getEdad (){return edad;}
         std::string getRol (){return rol;}
-        void mostrarDatos ();
+        virtual void mostrarDatos () = 0;
 };
 
 class jugador : public persona {
@@ -29,9 +28,8 @@ class jugador : public persona {
         int rating;
         std::string posicion;
     public:
-        void individuo(){cout << "jugador"};
-		jugador();
-        jugador(std::string , std::string , int , int , int , std::string);
+        jugador();
+        jugador(std::string n, std::string r, int e, int num, int ra, std::string pos);
         int getNumero(){return numero;}
         int getRating() {return rating;}
         void mostrarDatos();
@@ -43,9 +41,9 @@ class coach : public persona {
         std::string posicion;
         int experiencia;
     public:
-    	void individuo(){cout << "Coach"};
-        coach(std::string , std::string , int , std::string , std::string , int);
+        coach(std::string n, std::string r, int e, std::string j, std::string pos, int exp);
         int getExp() {return experiencia;}
+        std::string getPos(){return posicion;}
         void mostrarDatos();
 };
 
@@ -61,21 +59,13 @@ class equipo{
         int cp;
     
     public:
-        equipo(std::string , std::string , std::string , int);
+        equipo(std::string c , std::string n , std::string e , int cp1);
         void crearEquipo ();
         void mostrarCoaches ();
+        void mostrarCoaches (std::string);
         void buscarJugador (std::string , int);
         void buscarRating (int);
         void buscarExp (int);
 };
-
-int main(){
-	Individuo*individuo1 = new jugador();
-	Individuo*individuo2 = new coach();
-	
-	individuo1 -> individuo();
-	individuo2 -> individuo();
-
-}
 
 #endif
