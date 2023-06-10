@@ -59,7 +59,7 @@ int main(){
         }
     }
     else{
-        cout << "Buenas noches...." << endl;
+        cout << "Hasta la proxima..." << endl;
     }
 
 }
