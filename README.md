@@ -6,7 +6,7 @@ Este código será un listado de integrantes del equipo representativo de footba
 La problemática por tratar es que, si una persona quiere conocer a un equipo, sea de la escuela que sea es difícil encontrar información especifica sobre su equipo, incluyendo jugadores y coaching staff.
 
 ## ACLARACIONES 
-Para conocer los datos en particular de alguien, primero se debe de saber algo en particular, si se quieren conocer los datos de un jugador primero se debe de conocer el nombre, el cual debe ser escrito tal y como es y sin caracteres especiales.
+Para conocer los datos en particular de alguien, primero se debe de saber algo en particular, si se quieren conocer los datos de un jugador primero se debe de conocer el nombre, el cual se escribirá de la siguiente forma, nombre (sin apellidos), depúes el número.
 
 ## Casos de error
 - Si se escribe de manera incorrecta un nombre.
@@ -37,3 +37,4 @@ SEG0702A:
 - Usa herramientas de control de versiones
 - Incluye documentación útil en el repositorio del pryecto
 
+![image](https://github.com/DiegoPDLB/RosterBGS/assets/111619317/d5456e39-587c-4fce-9f15-13c5024d4898)
