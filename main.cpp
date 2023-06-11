@@ -1,8 +1,10 @@
 #include "metodos.cpp"
+/// En el include ponemos el archivo de metodos.cpp para jalar toda la informacion 
 
 int main(){
+    /// Dentro del main solo presentamos las opciones que el usuario podra tomar con sus respectivos if
     int opcion = 0;
-    cout << "Desea hacer un equipo de ejemplo?" << endl;
+    cout << "Desea conocer el Roster?" << endl;
     cout << "Si = 1 | No = 0" << endl;
     cin >> opcion;
     if (opcion == 1){
@@ -56,10 +58,12 @@ int main(){
                         cin >> ra;
                         borregos.buscarRating(ra); 
                 }
+        break;        
         }
     }
     else{
         cout << "Hasta la proxima..." << endl;
     }
-
+        
 }
+
