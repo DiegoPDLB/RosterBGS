@@ -7,6 +7,7 @@
 using namespace std;
 const int m = 70;
 
+///En toda esta seccion declaro todos los atributos, metodos e incluyo polimorfimos 
 
 class persona{
     private:
@@ -19,7 +20,7 @@ class persona{
         std::string getNombre () {return nombre;}
         int getEdad (){return edad;}
         std::string getRol (){return rol;}
-        virtual void mostrarDatos () = 0;
+        virtual void mostrarDatos () = 0; // Polimorfismo
 };
 
 class jugador : public persona {
