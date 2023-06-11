@@ -1,7 +1,7 @@
 #ifndef metodos_h
 #define metodos_h
 
-#include "clases.h"
+#include "clases.h" // Aqui incluimos todo lo que definimos en el archivo clase.cpp en donde estan todos los atributos, metodos, clases que utilizaremos
 
 //-------------------------------------------------------------------
 
@@ -14,7 +14,7 @@ equipo :: equipo (std::string c , std::string n , std::string e , int cp1){
     numCoaches = 0;
 }
 
-void equipo :: crearEquipo (){ //Pendiente 
+void equipo :: crearEquipo (){ // Aqui se agrega el conjunto de datos de cada uno de los jugadores. Discalimer: Somos 75 jugadores, se utilizo solo una muestra pequeña de datos
         //Nombre , rol , edad , numero , rating , posicion
         jugadores[numJugadores] = new jugador("Eduardo Antonio Ollervides Ayala" , "D" , 19 , 0 , 5 , "CB");
         numJugadores++;
@@ -74,6 +74,7 @@ void equipo :: crearEquipo (){ //Pendiente
         numJugadores++;
         jugadores[numJugadores] = new jugador("Emilio Becerra Millan" , "O" , 19 , 71 , 3 , "OL");
         numJugadores++;
+        // Aqui se agrego el conjunto de datos de todos los coaches
         //Nombre , rol , edad , jerarquia , posicion , experiencia 
         coaches[numCoaches] = new coach("Gustavo Tella Topete " , "O" , 45 , "HC" , "HC" , 20);
         numCoaches++;
