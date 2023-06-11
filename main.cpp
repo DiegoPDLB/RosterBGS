@@ -58,7 +58,7 @@ int main(){
                         cin >> ra;
                         borregos.buscarRating(ra); 
                 }
-        break;        
+        break;   // Antes tenia un bucle porque no habia escrito este break     
         }
     }
     else{
