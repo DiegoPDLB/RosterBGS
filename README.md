@@ -6,16 +6,18 @@ Este código será un listado de integrantes del equipo representativo de footba
 La problemática por tratar es que, si una persona quiere conocer a un equipo, sea de la escuela que sea es difícil encontrar información especifica sobre su equipo, incluyendo jugadores y coaching staff.
 
 ## ACLARACIONES 
-Para conocer los datos en particular de alguien, primero se debe de saber algo en particular, si se quieren conocer los datos de un jugador primero se debe de conocer el nombre, el cual se escribirá de la siguiente forma, nombre (sin apellidos), depúes el número.
+Para conocer los datos en particular de alguien, primero se debe de saber algo en particular, si se quieren conocer los datos de un jugador primero se debe de conocer el nombre, el cual se escribirá de la siguiente forma, primer nombre, depúes el número.
 
 ## Casos de error
 - Si se escribe de manera incorrecta un nombre.
 - Se escribe en minuscula lo que no son nombres.
+- Si se intenta correr desde metodos.cpp o clases.h
 
 ## Modo de uso
+Se debe de usar el main.cpp para correr el programa.
 El programa solo corre en la consola y esta hecho con c++ standard por lo que corre en todos los sistemas operativos
 
-compilar con: "g++ empleado.h empresa.h main.cpp"
+compilar con: "g++"
 
 correr en linux: "/a.out"
 
