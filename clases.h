@@ -1,5 +1,5 @@
-#ifndef class_h
-#define class_h
+#ifndef clases_h
+#define clases_h
 
 #include <iostream>
 #include <string>
