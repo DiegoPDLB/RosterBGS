@@ -1,7 +1,12 @@
 #ifndef metodos_h
 #define metodos_h
 
-#include "clases.h" // Aqui incluimos todo lo que definimos en el archivo clase.cpp en donde estan todos los atributos, metodos, clases que utilizaremos
+#include <iostream>
+#include <sstream>
+#include <vector>
+#include <fstream>
+#include <string>
+#include "class.h" // Aqui incluimos todo lo que definimos en el archivo clase.cpp en donde estan todos los atributos, metodos, clases que utilizaremos
 
 //-------------------------------------------------------------------
 
@@ -14,90 +19,126 @@ equipo :: equipo (std::string c , std::string n , std::string e , int cp1){
     numCoaches = 0;
 }
 
-void equipo :: crearEquipo (){ // Aqui se agrega el conjunto de datos de cada uno de los jugadores. Discalimer: Somos 75 jugadores, se utilizo solo una muestra pequeña de datos
-        //Nombre , rol , edad , numero , rating , posicion
-        jugadores[numJugadores] = new jugador("Eduardo Antonio Ollervides Ayala" , "D" , 19 , 0 , 5 , "CB");
+void equipo :: crearEquipo (){ // Aqui se agrega el conjunto de datos de cada uno de los jugadores. Discalimer: Somos 75 jugadores, se utilizo solo una muestra pequeÃ±a de datos
+// Esta seccion fue actualizada con la correccion en la que agrego archivos txt para poder solucionar la necesidad de crear un nuevo jugador
+    ifstream archivoJugadores("jugadores.txt");
+    ifstream archivoCoaches("coaches.txt");
+    
+    // Leer datos de jugadores
+    string nombre, rol, posicion;
+    int edad, numero, rating;
+    int numJugadores = 0;
+    while (archivoJugadores >> nombre >> rol >> edad >> numero >> rating >> posicion) {
+        jugadores[numJugadores] = new jugador(nombre, rol, edad, numero, rating, posicion);
         numJugadores++;
-        jugadores[numJugadores] = new jugador("Diego Armando Roman Osorio" , "D" , 23 , 1 , 4 , "LB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Ian Adalberto Trejo Sanchez" , "D" , 20 , 2 , 4 , "CB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Alexis Dasaef De la Garza Sanchez" , "O" , 24 , 3 , 3 , "WR");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Rodrigo Rafael Cardenas Nomura" , "D" , 23 , 4 , 3 , "DB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Diego Armando Sanchez Carmona" , "D" , 23 , 6 , 4 , "DL");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Luis Alfredo Kobeh Ramirez" , "O" , 24 , 7 , 5 , "QB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Emiliano Jimenez Garcia" , "D" , 23 , 8 , 4 , "LB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Luis Fernando Saenz De la Torre" , "D" , 23 , 9 , 3 , "DB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Asael Bolio Fernandez de Lara" , "D" , 22 , 10 , 5 , "WR");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Carlos Emilio Ollervides Ayala" , "O" , 21 , 13 , 3 , "WR");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Fernando Gabriel Escalona Nava" , "O" , 18 , 14 , 4 , "QB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Nicolas Machado Jaime" , "O" , 18 , 15 , 3 , "QB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Jose Manuel Gameros Alvarez Tostado" , "D" , 22 , 16 , 3 , "CB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Tadeo Eduardo De la Garza Sanchez" , "O" , 20 , 18 , 3 , "RB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Francisco Rivera Barrios" , "O" , 21 , 19 , 3 , "QB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Santiago Gutierrez Uribe" , "D" , 22 , 21 , 4 , "DB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Franco Gutierrez Maceda Chavez" , "O" , 23 , 22 , 3 , "RB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Mauricio Hernandez De la Torre" , "D" , 23 , 23 , 3 , "CB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Edgar Ivan Mancha Alfaro" , "D" , 22 , 24 , 5 , "LB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Fernando Alberto Valencia Vazquez" , "O" , 23 , 26 , 4 , "RB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Marco Aurelio Serrano Vargas" , "D" , 21 , 28 , 4 , "DB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Adrian Roa Aguilar" , "O" , 20 , 30 , 4 , "RB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Santiago Jose Hevia Cortes" , "O" , 22 , 31 , 5 , "RB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Emiliano Morales Quiroga" , "D" , 19 , 32 , 3 , "DB");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Diego Ponce de Leon Betanzos" , "O" , 19 , 75 , 3 , "OL");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Edgar Alexander Carrizalez Lerin" , "O" , 21 , 53 , 5 , "OL");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Arnold Becerra Millan" , "O" , 21 , 77 , 4 , "OL");
-        numJugadores++;
-        jugadores[numJugadores] = new jugador("Emilio Becerra Millan" , "O" , 19 , 71 , 3 , "OL");
-        numJugadores++;
-        // Aqui se agrego el conjunto de datos de todos los coaches
-        //Nombre , rol , edad , jerarquia , posicion , experiencia 
-        coaches[numCoaches] = new coach("Gustavo Tella Topete " , "O" , 45 , "HC" , "HC" , 20);
+    }
+    
+    // Leer datos de coaches
+    string nombreCoach, jerarquia, posicionCoach;
+    int edadCoach, experiencia;
+    int numCoaches = 0;
+    while (archivoCoaches >> nombreCoach >> rol >> edadCoach >> jerarquia >> posicionCoach >> experiencia) {
+        coaches[numCoaches] = new coach(nombreCoach, rol, edadCoach, jerarquia, posicionCoach, experiencia);
         numCoaches++;
-        coaches[numCoaches] = new coach("Tadeo Sergio de la Garza Alvarez" , "O" , 55 , "CP" , "CP" , 35);
-        numCoaches++;
-        coaches[numCoaches] = new coach("Carlos Eduardo Briones Zermeño" , "O" , 31 , "C" , "OL" , 5);
-        numCoaches++;
-        coaches[numCoaches] = new coach("Alan Axel Vega de Lucio" , "D" , 29 , "CD" , "CD" , 15);
-        numCoaches++;
-        coaches[numCoaches] = new coach("Javier Rodrigo Garcia Reyes" , "O" , 38 , "CO" , "CO" , 21);
-        numCoaches++;
-        coaches[numCoaches] = new coach("Jorge Panda Leon" , "O" , 33 , "C" , "TE" , 12);
-        numCoaches++;
-        coaches[numCoaches] = new coach("Rassielh Lopez" , "D" , 37 , "C" , "DL" , 13);
-        numCoaches++;
-        coaches[numCoaches] = new coach("Carlos Alberto Hernandez Quintinilla" , "O" , 34 , "C" , "WR" , 13);
-        numCoaches++;
-        coaches[numCoaches] = new coach("Gilberto Noel Paredes Vega" , "D" , 35 , "C" , "DB" , 18);
-        numCoaches++;
-        coaches[numCoaches] = new coach("Patricio Eduardo Gleeson Lara" , "D" , 35 , "C" , "LB" , 18);
-        numCoaches++;
-        coaches[numCoaches] = new coach("Miguel Angel Camacho" , "D" , 49 , "C" , "DL" , 23);
-        numCoaches++;
+    }
+    
+    archivoJugadores.close();
+    archivoCoaches.close();
+    
+    // Actualizar el numero de jugadores y entrenadores
+    this->numJugadores = numJugadores;
+    this->numCoaches = numCoaches;
+}
+
+void equipo::anadirJugador () {
+    ofstream archivo("jugadores.txt", ios::app);
+    if (archivo.is_open()) {
+        string nombre, rol, posicion;
+        int edad, numero, rating;
+
+        cout << "Nombre: ";
+        cin.ignore();
+        getline(cin, nombre);
+
+        cout << "Rol: ";
+        getline(cin, rol);
+
+        cout << "Edad: ";
+        cin >> edad;
+
+        cout << "Numero: ";
+        cin >> numero;
+
+        cout << "Rating: ";
+        cin >> rating;
+
+        cout << "Posicion: ";
+        cin.ignore();
+        getline(cin, posicion);
+
+        archivo << endl;
+        archivo << nombre << ";" << rol << ";" << edad << ";" << numero << ";" << rating << ";" << posicion;
+        archivo.close();
+        jugadores[numJugadores] = new jugador(nombre, rol, edad, numero, rating, posicion);
+        numJugadores++;
+    } else {
+        cout << "No se pudo abrir el archivo de jugadores." << endl;
+    }
+}
+
+void equipo::cargarJugadores () {
+    ifstream archivo("jugadores.txt");
+    if (archivo.is_open()) {
+        string linea;
+        while (getline(archivo, linea)) {
+            stringstream ss(linea);
+            string nombre, rol, posicion;
+            int edad, numero, rating;
+
+            getline(ss, nombre, ';');
+            getline(ss, rol, ';');
+            ss >> edad;
+            ss.ignore();
+            ss >> numero;
+            ss.ignore();
+            ss >> rating;
+            ss.ignore();
+            getline(ss, posicion);
+
+            jugadores[numJugadores] = new jugador(nombre, rol, edad, numero, rating, posicion);
+            numJugadores++;
+        }
+        archivo.close();
+    } else {
+        cout << "No se pudo abrir el archivo de jugadores." << endl;
+    }
+}
+
+void equipo::cargarCoaches() {
+    ifstream archivo("coaches.txt");
+    if (archivo.is_open()) {
+        string linea;
+        while (getline(archivo, linea)) {
+            stringstream ss(linea);
+            string nombre, rol, jerarquia, posicion;
+            int edad, experiencia;
+
+            getline(ss, nombre, ';');
+            getline(ss, rol, ';');
+            ss >> edad;
+            ss.ignore();
+            getline(ss, jerarquia, ';');
+            getline(ss, posicion, ';');
+            ss >> experiencia;
+            ss.ignore();
+
+            coaches[numCoaches] = new coach(nombre, rol, edad, jerarquia, posicion, experiencia);
+            numCoaches++;
+        }
+        archivo.close();
+    } else {
+        cout << "No se pudo abrir el archivo de coaches." << endl;
+    }
 }
 
 void equipo :: mostrarCoaches (){
