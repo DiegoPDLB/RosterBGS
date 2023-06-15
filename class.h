@@ -1,5 +1,5 @@
-#ifndef clases_h
-#define clases_h
+#ifndef class_h
+#define class_h
 
 #include <iostream>
 #include <string>
@@ -62,6 +62,9 @@ class equipo{
     public:
         equipo(std::string c , std::string n , std::string e , int cp1);
         void crearEquipo ();
+        void anadirJugador ();
+        void cargarJugadores ();
+        void cargarCoaches ();
         void mostrarCoaches ();
         void mostrarCoaches (std::string);
         void buscarJugador (std::string , int);
