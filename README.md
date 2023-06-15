@@ -14,7 +14,7 @@ Para conocer los datos en particular de alguien, primero se debe de saber algo e
 - Si se intenta correr desde metodos.cpp o clases.h
 
 ## Modo de uso
-Se debe de usar el main.cpp para correr el programa.
+Se debe de usar el main.cpp para correr el programa. Se necesita tener los 5 aechivos descargados: main.cpp, metodos.cpp, class.h, coaches.txt y jugadores.txt.
 El programa solo corre en la consola y esta hecho con c++ standard por lo que corre en todos los sistemas operativos
 
 compilar con: "g++"
@@ -37,6 +37,6 @@ SICT0303A:
 
 SEG0702A:
 - Usa herramientas de control de versiones
-- Incluye documentación útil en el repositorio del pryecto
+- Incluye documentación útil en el repositorio del proyecto
 
-![image](https://github.com/DiegoPDLB/RosterBGS/assets/111619317/d5456e39-587c-4fce-9f15-13c5024d4898)
+![image](https://github.com/DiegoPDLB/RosterBGS/assets/111619317/f6812a68-ee26-4dfa-89cf-95369c3adc8b)
