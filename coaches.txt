@@ -1,0 +1,11 @@
+Gustavo Tella Topete;O;45;HC;HC;20
+Tadeo Sergio de la Garza Alvarez;O;55;CP;CP;35
+Carlos Eduardo Briones Zermeño;O;31;C;OL;5
+Alan Axel Vega de Lucio;D;29;CD;CD;15
+Javier Rodrigo Garcia Reyes;O;38;CO;CO;21
+Jorge Panda Leon;O;33;C;TE;12
+Rassielh Lopez;D;37;C;DL;13
+Carlos Alberto Hernandez Quintinilla;O;34;C;WR;13
+Gilberto Noel Paredes Vega;D;35;C;DB;18
+Patricio Eduardo Gleeson Lara;D;35;C;LB;18
+Miguel Angel Camacho;D;49;C;DL;23

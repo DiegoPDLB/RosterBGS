@@ -1,0 +1,31 @@
+Eduardo Antonio Ollervides Ayala;D;19;0;5;CB
+Diego Armando Roman Osorio;D;23;1;4;LB
+Ian Adalberto Trejo Sanchez;D;20;2;4;CB
+Alexis Dasaef De la Garza Sanchez;O;24;3;3;WR
+Rodrigo Rafael Cardenas Nomura;D;23;4;3;DB
+Diego Armando Sanchez Carmona;D;23;6;4;DL
+Luis Alfredo Kobeh Ramirez;O;24;7;5;QB
+Emiliano Jimenez Garcia;D;23;8;4;LB
+Luis Fernando Saenz De la Torre;D;23;9;3;DB
+Asael Bolio Fernandez de Lara;D;22;10;5;WR
+Carlos Emilio Ollervides Ayala;O;21;13;3;WR
+Fernando Gabriel Escalona Nava;O;18;14;4;QB
+Nicolas Machado Jaime;O;18;15;3;QB
+Jose Manuel Gameros Alvarez Tostado;D;22;16;3;CB
+Tadeo Eduardo De la Garza Sanchez;O;20;18;3;RB
+Francisco Rivera Barrios;O;21;19;3;QB
+Santiago Gutierrez Uribe;D;22;21;4;DB
+Franco Gutierrez Maceda Chavez;O;23;22;3;RB
+Mauricio Hernandez De la Torre;D;23;23;3;CB
+Edgar Ivan Mancha Alfaro;D;22;24;5;LB
+Fernando Alberto Valencia Vazquez;O;23;26;4;RB
+Marco Aurelio Serrano Vargas;D;21;28;4;DB
+Adrian Roa Aguilar;O;20;30;4;RB
+Santiago Jose Hevia Cortes;O;22;31;5;RB
+Emiliano Morales Quiroga;D;19;32;3;DB
+Diego Ponce de Leon Betanzos;O;19;75;3;OL
+Edgar Alexander Carrizalez Lerin;O;21;53;5;OL
+Arnold Becerra Millan;O;21;77;4;OL
+Emilio Becerra Millan;O;19;71;3;OL
+Diego Ponce de Le¢n B;O;19;74;5;OL
+Javier Raul;D;21;99;1;DB
